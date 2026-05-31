@@ -1,0 +1,228 @@
+/*------Global Styles------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*------Body------*/
+body {
+  background-image: url("../../img/materials/Vault.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-color: #f0f4fc;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  min-height: 100vh;
+  height: auto;
+  padding: 90px 20px 30px;
+}
+
+/*------Container------*/
+.container {
+  width: min(450px, 100%);
+  padding: 20px;
+  margin-right: 8vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(3, 1, 1, 0.15);
+}
+
+/*------Form------*/
+form {
+  margin: 0 2rem;
+}
+
+.form-title {
+  padding: 1.3rem;
+  margin-bottom: 0.4rem;
+
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*------Input Fields------*/
+.input-group {
+  position: relative;
+  padding: 1% 0;
+}
+
+.input-group i {
+  position: absolute;
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding-left: 1.5rem;
+
+  color: inherit;
+  font-size: 15px;
+
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+/*------Floating Labels------*/
+label {
+  position: relative;
+  left: 1.2em;
+  top: -1.3em;
+
+  color: #757575;
+  transition: 0.3s ease all;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -3em;
+  color: hsl(327, 90%, 28%);
+  font-size: 15px;
+}
+
+/*------Forgot Password------*/
+.recover {
+  margin-bottom: 1rem;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.recover a {
+  color: #413f38;
+  text-decoration: none;
+}
+
+.recover a:hover {
+  color: #747264;
+  text-decoration: underline;
+}
+
+/*------Buttons------*/
+.btn {
+  width: 100%;
+  padding: 8px 0;
+
+  color: white;
+  background: #747264;
+
+  font-size: 1.1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+.container .btn {
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background: #413f38;
+}
+
+button {
+  border: none;
+  background: transparent;
+
+  color: #413f38;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #747264;
+  text-decoration: underline;
+}
+
+/*------Social Icons------*/
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  margin: 0 15px;
+  padding: 0.8rem 1.5rem;
+
+  color: #413f38;
+  border: 2px solid #dfe9f5;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 1s;
+}
+
+.icons i:hover {
+  background: #e5e5e0;
+  font-size: 1.6rem;
+}
+
+/*------Links------*/
+.links {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 0.5rem;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*------Responsive Design------*/
+@media (max-width: 900px) {
+  body {
+    justify-content: center;
+    background-size: cover;
+  }
+
+  .container {
+    width: min(430px, 100%);
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 86px 14px 24px;
+    background-position: left;
+    background-size: left;
+  }
+
+  .container {
+    padding: 18px 14px;
+  }
+
+  form {
+    margin: 0 1rem;
+  }
+
+  .icons i {
+    margin: 0 6px;
+    padding: 0.7rem 1.1rem;
+  }
+
+  .links {
+    gap: 10px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend Vault | Service&Contact</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- For Icons -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/cart.js" defer></script>
+  </head>
+
+  <body>
+    <!--NAVIGATOR SECTION-->
+    <section class="nav">
+      <a href="index.php">
+        <!--FOR LOGO-->
+        <img alt="logo" class="logo" src="img/materials/logo.png" />
+      </a>
+
+      <ul class="navbar">
+        <!--FOR NAVIGATION BAR-->
+        <li><a href="index.php">Home</a></li>
+        <li><a href="shop.php">Shop</a></li>
+        <li><a href="shop.php#men_categories">Men</a></li>
+        <li><a href="shop.php#women_categories">Women</a></li>
+        <li><a href="shop.php#accessories_categories">Accessories</a></li>
+        <li><a href="shop.php#footwear_categories">Footwear</a></li>
+        <li class="mobile-only"><a href="about.html">About Us</a></li>
+        <li class="mobile-only">
+          <a href="services_contact.html#services">Services</a>
+        </li>
+        <li class="mobile-only">
+          <a href="services_contact.html#contact">Contact</a>
+        </li>
+        <li class="mobile-only"><a href="logout.php">Logout</a></li>
+      </ul>
+
+      <div class="icon">
+        <!--FOR ICONS: USER PROFILE (change)-->
+        <a href="cart.php" id="cart-link"
+          ><i class="bx bx-cart"><span id="cart-count">0</span></i></a
+        >
+        <a href="profile.php"><i class="bx bx-user"></i></a>
+
+        <div class="bx bx-menu" id="menu" onclick="toggleMenu()"></div>
+        <!--FOR ICON: MENU-->
+        <ul class="dropdown-menu desktop-dropdown">
+          <!--FOR MENU CONTENTS: ABOUT, SERVICES, CONTACT, SETTINGS-->
+          <li><a href="about_services_contact.html#about">About Us</a></li>
+          <li><a href="about_services_contact.html#services">Services</a></li>
+          <li><a href="about_services_contact.html#contact">Contact</a></li>
+          <li>
+            <a href="logout.php" style="color: #bab69d; font-size: 19px"
+              ><i
+                class="bx bx-log-out-circle"
+                style="color: #bab69d; font-size: 16px"
+              ></i
+              >Logout</a
+            >
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section id="about">
+      <div class="contents">
+        <!--ABOUT THIS WEBSITE-->
+        <h1>About Us</h1>
+        <p>
+          Welcome to Trend Vault! We are a group of student programmers from
+          University of Rizal System-Morong, and this website is the culmination
+          of our hard work and creativity as part of our final project for the
+          Advanced Web Development course. Our goal with this project was to
+          create a modern, functional, and visually appealing e-commerce
+          platform that combines the principles of great design and efficient
+          coding. From sleek product displays to seamless user interactions,
+          every feature on this website reflects the skills and knowledge we've
+          gained throughout this course.
+        </p>
+        <p>
+          Thank you for visiting our site and being part of our learning
+          experience. We hope you enjoy exploring it as much as we enjoyed
+          creating it!
+        </p>
+      </div>
+
+      <!--ABOUT DEVELOPERS-->
+      <div class="contents">
+        <h1>Programmers</h1>
+        <div class="about-section">
+          <div class="about-image">
+            <img
+              src="img/about/cat1.png"
+              alt="Joseph Barangas"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="about-content">
+            <h2>JOSEPH BARANGAS</h2>
+            <h3>Back-End Developer</h3>
+            <p>
+              3rd Year College<br />
+              BS Computer Science<br />
+              University of Rizal System - Morong
+            </p>
+            <a href="#" class="btn">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="about-section">
+          <div class="about-image">
+            <img
+              src="img/about/cat2.png"
+              alt="Syrrill Bragais"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="about-content">
+            <h2>SYRILL BRAGAIS</h2>
+            <h3>Front-End Developer</h3>
+            <p>
+              3rd Year College<br />
+              BS Computer Science<br />
+              University of Rizal System - Morong
+            </p>
+            <a href="#" class="btn">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES SECTION-->
+    <section id="services">
+      <div class="container">
+        <h1 class="section-title">Our Services</h1>
+        <div class="services-grid">
+          <div class="service-item">
+            <h2>Personal Styling</h2>
+            <p>
+              Tailored advice to define and enhance your unique style. Seasonal
+              trend updates and curated outfit recommendations.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Custom Tailoring</h2>
+            <p>
+              Perfect fits for any occasion with expert tailoring. Bespoke
+              creations designed to your exact preferences.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Fashion Rentals</h2>
+            <p>
+              Access exclusive designer pieces for events or photoshoots.
+              Sustainable, cost-effective fashion choices.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Wardrobe Makeover</h2>
+            <p>
+              Organize and revitalize your closet with professional help. Build
+              a capsule wardrobe featuring timeless and versatile items.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Virtual Styling</h2>
+            <p>
+              Online consultations for styling advice anywhere, anytime.
+              Personalized digital lookbooks tailored to your preferences.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Fashion Subscription Box</h2>
+            <p>
+              Monthly curated boxes with outfits and accessories. Customized to
+              your tastes and fashion goals.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Corporate Styling</h2>
+            <p>
+              Professional attire recommendations for individuals or teams.
+              Style and grooming workshops for corporate clients.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Accessories Curation</h2>
+            <p>
+              Handpicked jewelry, handbags, and shoes to complete your look.
+              Tips on matching accessories to elevate any outfit.
+            </p>
+          </div>
+          <div class="service-item">
+            <h2>Event Styling</h2>
+            <p>
+              Outfit planning for weddings, galas, and other special events.
+              Expert advice on trends, colors, and dress codes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT SECTION-->
+    <section id="contact">
+      <form method="post" action="submit_contact.php" class="contact-form">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or concerns? Feel free to reach out to us by filling
+          out the form below.
+        </p>
+        <div class="input-group">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="address">Contact Number:</label>
+          <input
+            type="text"
+            id="address"
+            name="number"
+            placeholder="Enter your Contact number"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="#address"
+            name="address"
+            placeholder="Enter your Address"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer>
+      <div class="footer-container">
+        <!-- About Us -->
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>
+            At Trend Vault, we bring you the latest trends in fashion. Celebrate
+            your individuality with us!
+          </p>
+          <a href="about.html">Learn More</a>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="shipping.html">Shipping & Delivery</a></li>
+            <li><a href="returns.html">Returns & Exchanges</a></li>
+            <li><a href="track-order.html">Track Your Order</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="shop-men.html">Shop Men</a></li>
+            <li><a href="shop-women.html">Shop Women</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="best-sellers.html">Best Sellers</a></li>
+            <li><a href="sale.html">Sale</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section">
+          <h4>Stay Connected</h4>
+          <p>Sign up for exclusive offers and updates!</p>
+          <form class="subscribe">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media & Payment -->
+      <div class="footer-bottom">
+        <div class="social-media">
+          <h4>Follow Us</h4>
+          <a href="https://instagram.com"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://facebook.com"
+            ><i class="bx bxl-facebook-square"></i
+          ></a>
+          <a href="https://github.com"><i class="bx bxl-github"></i></a>
+          <a href="https://twitter.com"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <div class="payment-options">
+          <img src="img/materials/payment.png" alt="Visa" />
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <p>© 2024 Trend Vault. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!--FOR NAVIGATOR EFFECT WHEN SCROLL UP-->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector(".nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
